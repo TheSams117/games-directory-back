@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class GamesDirectoryBack {
-	private static ApplicationContext applicationContext;
+	public static ApplicationContext applicationContext;
 	public static void main(String[] args) {
 		applicationContext = SpringApplication.run(GamesDirectoryBack.class, args);
 		GameRepository gameRepository = (GameRepository) applicationContext.getBean(GameRepository.class);
