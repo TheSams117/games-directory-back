@@ -16,12 +16,6 @@ jar {
     }
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 repositories {
 	mavenCentral()
 }
